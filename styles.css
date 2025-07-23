@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+  margin: auto;
+
+}
+
+
+.navbar{
+  background: #40798C;
+}
+
+.navbar .container-fluid{
+  max-width: 80%;
+}
+
+.navbar-brand{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand p{
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.img-logo{
+  max-height: 40px;
+}
+
+/* @media screen and (max-width:992px){
+  .navbar-brand p{
+  display: none;
+} */
+}
