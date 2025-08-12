@@ -4,10 +4,13 @@ html {
 
 }
 
-
-.navbar{
-  background: #40798C;
+.text-shadow {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
+
+/* .navbar{
+  background: #40798C;
+} */
 
 .navbar .container-fluid{
   max-width: 80%;
