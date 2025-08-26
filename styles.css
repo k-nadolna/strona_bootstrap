@@ -32,8 +32,13 @@ html {
   max-height: 40px;
 }
 
-/* @media screen and (max-width:992px){
-  .navbar-brand p{
-  display: none;
-} */
+.img-about{
+  clip-path: ellipse(0px 0px at 50% 50%);
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn{
+  to{
+    clip-path: ellipse(100% 100% at 50% 50%);
+  }
 }
