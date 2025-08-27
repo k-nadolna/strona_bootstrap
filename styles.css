@@ -58,7 +58,9 @@ html {
 }
 
 #about .container-fluid, 
-#rooms .container-fluid{
+#rooms .container-fluid,
+#gallery .container-fluid,
+#contact .container-fluid{
   max-width: 80%;
   margin: auto;
 }
@@ -67,6 +69,23 @@ html {
   clip-path: inset(100%);
   animation: fadeIn 2s forwards;
 }
+
+#gallery img{
+}
+
+/* lightbox */
+.lightboxOverlay{
+  background: rgba(70, 60, 60, 0.79) !important;
+}
+
+#about, #contact{
+  background: linear-gradient(white, #d1e7dd);
+}
+
+#message{
+  min-height: 200px;
+}
+
 
 @keyframes fadeIn{
   to{
@@ -80,7 +99,9 @@ html {
 }
   
   #about .container-fluid, 
-  #rooms .container-fluid{
+  #rooms .container-fluid,
+  #gallery .container-fluid,
+  #contact .container-fluid{
   max-width: 90%;
   margin: auto;
 }
