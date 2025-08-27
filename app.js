@@ -1,3 +1,17 @@
+const navbar = document.querySelector('.navbar');
+
+function navbarScrolled() {
+  if(window.scrollY > 50){
+    navbar.classList.add('scrolled');
+  }else{
+    navbar.classList.remove('scrolled');
+  }
+};
+
+window.addEventListener('scroll', navbarScrolled);
+
+
+
 // const img = document.querySelector('.img-about');
 
 // const observer = new IntersectionObserver((entries, observer) => {

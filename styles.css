@@ -4,15 +4,23 @@ html {
 
 }
 
+
 .text-shadow {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
-/* .navbar{
-  background: #40798C;
-} */
+.navbar{
+  height: 75px;
+  transition: all 0.5s;
+}
 
-.navbar .container-fluid{
+.navbar.scrolled{
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  height: 60px;
+  transition: all 0.5s;
+}
+
+.navbar .container-fluid{ 
   max-width: 80%;
 }
 
@@ -21,24 +29,59 @@ html {
   align-items: center;
 }
 
-.navbar-brand p{
+.navbar .navbar-brand p{
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
   font-size: 32px;
   font-weight: 600;
   margin: 0px;
+  transition: all 0.5s;
 }
 
-.img-logo{
+.navbar.scrolled .navbar-brand p{
+  font-size: 24px;
+  transition: all 0.5s;
+}
+
+.navbar .img-logo{
   max-height: 40px;
+  transition: all 0.5s;
+}
+
+.navbar.scrolled .img-logo{
+  max-height: 30px;
+  transition: all 0.5s;
+}
+
+#slider .carousel-item img{
+  height: 550px; 
+  object-fit: cover;
+}
+
+#about .container-fluid, 
+#rooms .container-fluid{
+  max-width: 80%;
+  margin: auto;
 }
 
 .img-about{
-  clip-path: ellipse(0px 0px at 50% 50%);
+  clip-path: inset(100%);
   animation: fadeIn 2s forwards;
 }
 
 @keyframes fadeIn{
   to{
-    clip-path: ellipse(100% 100% at 50% 50%);
+    clip-path: inset(0%);
   }
+}
+
+@media screen and (max-width:768px){
+  #slider .carousel-item img{
+  height: 350px; 
+}
+  
+  #about .container-fluid, 
+  #rooms .container-fluid{
+  max-width: 90%;
+  margin: auto;
+}
 }
