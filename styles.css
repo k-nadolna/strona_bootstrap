@@ -94,6 +94,10 @@ html {
 }
 
 @media screen and (max-width:768px){
+  .navbar .container-fluid{ 
+  max-width: 100%;
+}
+
   #slider .carousel-item img{
   height: 350px; 
 }
